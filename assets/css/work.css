@@ -31,7 +31,7 @@
 
 .wall {
     max-width: 100%;
-    min-height: 100vh;
+    height: 6000px;
     margin: 90px 148px 240px 150px;
     display: block;
 }

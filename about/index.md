@@ -20,7 +20,7 @@ permalink: about/
 	</div>
 
 	<div class="portrait">
-		<img src="/osamaqandeel.github.io/assets/other/Portrait.jpg" alt="">
+		<img src="/assets/other/Portrait.jpg" alt="">
 	</div>
 
 </section>
