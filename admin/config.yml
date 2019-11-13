@@ -5,5 +5,7 @@ backend:
 media_folder: "assets/img"
 
 collections:
-  - name: "nhs-service" 
-    label: "Service" 
+  - name: "any"
+    fields:
+      - name: "any"
+        required: "false"
