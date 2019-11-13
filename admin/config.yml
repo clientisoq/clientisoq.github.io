@@ -3,3 +3,7 @@ backend:
   branch: master
 
 media_folder: "assets/img"
+
+collections:
+  - name: "nhs-service" 
+    label: "Service" 
