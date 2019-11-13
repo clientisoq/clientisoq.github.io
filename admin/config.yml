@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: clientisoq/clientisoq.github.io
+
+media_folder: "assets/img"
+
+collections:
+  - name: "website-settings"
+    label: "Website Settings"
+    files:
+      - label: "Website Settings"
+        name: "site"
+        file: ""
+        fields:
+          - label: ""
+            name: ""
+            width: "string"
