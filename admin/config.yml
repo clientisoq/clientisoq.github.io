@@ -6,6 +6,8 @@ media_folder: "assets/img"
 
 collections:
   - name: "any"
+    label: "any"
+    folder: "assets/img"
     fields:
       - name: "any"
-        required: "false"
+        required: false
