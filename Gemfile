@@ -1,4 +1,3 @@
 source "https://rubygems.org"
 gem 'github-pages'
-gem 'liquid'
-gem 'jekyll'
+gem 'liquid', '~> 4.0'
