@@ -1,18 +1,3 @@
 name: Omar Khmekham
 email: omarkhmekham@gmail.com
 exclude: ['README.md']
-
-prose:
-  ignore:
-    - index.html
-    - _config.yml
-    - .gitignore
-    - README.md
-    - /about
-    - /contact
-    - /assets/img/ico
-    - /assets/fonts
-    - /assets/css
-    - /assets/js
-    - /_layouts
-    - /_includes

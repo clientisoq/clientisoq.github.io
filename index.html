@@ -2,29 +2,38 @@
 layout: default
 ---
 
-<!-- <div class="loading">
-    <img src="/assets/other/loading.gif" alt="">
-</div> -->
+<header>
+    <nav>
+        <div class="brand">OQ.</div>
+        <ul class="links">
+            <li><a href="#">Our Studio</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-<section id="gallery" class="wall">
-    {% for image in site.static_files %}
-        {% if image.path contains 'img' %}
-            {% increment imgCounter %}
-            <a href="#item-{{ imgCounter }}" class="wall-item"><img src="{{ site.baseurl }}{{ image.path }}" alt=""></a>
-        {% endif %}
-    {% endfor %} 
-</section>
+<main>
+    <section class="about">
+        <h1 class="title">OQ. Studio</h1>
+        <div class="social">
+            <i class="fab fa-500px"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-flickr"></i>
+        </div>
+        <p class="bio">We’re a boutique studio that specializes in commercial, product and portrait <br> photography, working between Alexandria and Cairo, Egypt.</p>
+    </section>
 
-<div class="lightboxes">
+    <section id="gallery" class="wall">
         {% for image in site.static_files %}
             {% if image.path contains 'img' %}
-                {% increment lightboxbCounter %}
-                <div id="item-{{ lightboxbCounter }}" class="lightbox">
-                    <a href="#gallery" class="close"><i class="fas fa-times"></i></a>
-                    <div class="lightbox-content">
-                        <img class="lb-img" src="{{ site.baseurl }}{{ image.path }}" alt="">
-                    </div>
-                 </div>
+                {% increment imgCounter %}
+                <a href="#item-{{ imgCounter }}" class="wall-item"><img src="{{ site.baseurl }}{{ image.path }}" alt=""></a>
             {% endif %}
         {% endfor %}
-</div>
+    </section>
+</main>
+
+<footer>
+    <div class="copyright">OQ 2019. Please do not reproduce without the expressed written consent of OQ.</div>
+</footer>
