@@ -19,7 +19,6 @@
   list-style: none;
   color: #222222;
   font-size: 15px;
-  letter-spacing: 1px;
   line-height: 1.6;
 }
 
@@ -34,12 +33,18 @@ a:visited {
 i.fas, i.fab {
   color: #222222;
   cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+i.fas:hover, i.fab:hover {
+  color: #B4B4B4;
 }
 
 header nav {
   width: 100%;
-  height: 100px;
-  padding: 0 100px;
+  height: 104px;
+  padding: 0 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,12 +59,11 @@ header nav {
 header nav .brand {
   font-family: Caslon;
   font-size: 52px;
-  letter-spacing: 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 header nav .links {
@@ -69,7 +73,16 @@ header nav .links {
 }
 
 header nav .links li {
-  margin-left: 30px;
+  margin-left: 50px;
+}
+
+header nav .links li a {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+header nav .links li a:hover {
+  color: #B4B4B4;
 }
 
 main .about {
@@ -90,7 +103,6 @@ main .about {
 main .about .title {
   font-family: Caslon;
   font-size: 97px;
-  letter-spacing: 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -119,14 +131,14 @@ main .about .bio {
 
 main .wall {
   max-width: 100%;
-  margin: 0 75px 105px 77px;
+  margin: 0 140px 105px 142px;
 }
 
 main .wall .wall-item {
   display: block;
   margin: 0 0 50px 0;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 main .wall .wall-item:hover {
@@ -147,7 +159,7 @@ main .wall .wall-item img {
 main .wall .wall-column {
   display: block;
   position: relative;
-  width: 20%;
+  width: 33.3333%;
   float: left;
   padding: 25px;
 }
@@ -169,5 +181,7 @@ footer {
 
 footer .copyright {
   font-size: 12px;
+  color: #B4B4B4;
+  cursor: default;
 }
 /*# sourceMappingURL=style.css.map */
