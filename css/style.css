@@ -33,6 +33,7 @@ a:visited {
 
 i.fas, i.fab {
   color: #222222;
+  cursor: pointer;
 }
 
 body {
@@ -58,6 +59,11 @@ header nav .brand {
   font-family: Warnock;
   font-size: 50px;
   letter-spacing: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
 }
 
 header nav .links {
@@ -89,6 +95,11 @@ main .about .title {
   font-family: Warnock;
   font-size: 86px;
   letter-spacing: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
 }
 
 main .about .social {
@@ -107,6 +118,7 @@ main .about .social {
 
 main .about .bio {
   text-align: center;
+  cursor: default;
 }
 
 main .wall {
@@ -119,14 +131,15 @@ main .wall .wall-item {
   margin: 0 0 50px 0;
   -webkit-transition: all 200ms;
   transition: all 200ms;
-  background: lightgrey;
 }
 
 main .wall .wall-item:hover {
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
   cursor: pointer;
 }
 

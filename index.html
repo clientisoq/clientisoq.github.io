@@ -28,7 +28,7 @@ layout: default
         {% for image in site.static_files %}
             {% if image.path contains 'img' %}
                 {% increment imgCounter %}
-                <a href="#item-{{ imgCounter }}" class="wall-item"><img src="{{ site.baseurl }}{{ image.path }}" alt=""></a>
+                <a href="#{{ imgCounter }}" class="wall-item"><img src="{{ site.baseurl }}{{ image.path }}" alt=""></a>
             {% endif %}
         {% endfor %}
     </section>
