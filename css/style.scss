@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: "Warnock";
-    src: url("../fonts/WarnockPro-Semibold.otf");
+    font-family: "Caslon";
+    src: url("../fonts/Caslon-Book.ttf");
     font-weight: 600;
 }
 
@@ -51,13 +51,7 @@ i.fas, i.fab {
 
 // ---------------------------------- STYLES ---------------------------------- //
 
-body {
-    background-color:white;
-}
-
-
 header {
-    // border: black 1px solid;
 
     nav {
         width: 100%;
@@ -67,11 +61,9 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        // background-color: #fff;
-
         .brand {
-            font-family: Warnock;
-            font-size: 50px;
+            font-family: Caslon;
+            font-size: 52px;
             letter-spacing: 0px;
             user-select: none;
             cursor: default;
@@ -89,7 +81,6 @@ header {
 
 
 main {
-    // border: black 1px solid;
 
     .about {
         width: 100%;
@@ -99,8 +90,8 @@ main {
         align-items: center;
 
         .title {
-            font-family: Warnock;
-            font-size: 86px;
+            font-family: Caslon;
+            font-size: 96px;
             letter-spacing: 0px;
             user-select: none;
             cursor: default;
