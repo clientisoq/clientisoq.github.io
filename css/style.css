@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: "Caslon";
-  src: url("../fonts/Caslon-Book.ttf");
+  font-family: "Rift";
+  src: url("../fonts/Rift-Bold.otf");
   font-weight: 600;
 }
 
@@ -30,6 +30,10 @@ a:visited {
   color: inherit;
 }
 
+img {
+  pointer-events: none;
+}
+
 i.fas, i.fab {
   color: #222222;
   cursor: pointer;
@@ -38,7 +42,7 @@ i.fas, i.fab {
 }
 
 i.fas:hover, i.fab:hover {
-  color: #B4B4B4;
+  color: #aaaaaa;
 }
 
 header nav {
@@ -57,8 +61,8 @@ header nav {
 }
 
 header nav .brand {
-  font-family: Caslon;
-  font-size: 52px;
+  font-family: Rift;
+  font-size: 56px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -77,15 +81,20 @@ header nav .links li {
 }
 
 header nav .links li a {
+  color: #aaaaaa;
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
 
 header nav .links li a:hover {
-  color: #B4B4B4;
+  color: #222222;
 }
 
-main .about {
+header nav .links li .current {
+  color: #222222;
+}
+
+header .about {
   width: 100%;
   padding: 25px 60px 125px 60px;
   display: -webkit-box;
@@ -100,9 +109,9 @@ main .about {
           align-items: center;
 }
 
-main .about .title {
-  font-family: Caslon;
-  font-size: 97px;
+header .about .title {
+  font-family: Rift;
+  font-size: 102px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -110,7 +119,7 @@ main .about .title {
   cursor: default;
 }
 
-main .about .social {
+header .about .social {
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,17 +130,66 @@ main .about .social {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2px 0 40px 0;
+  margin: 2px 0 36px 0;
 }
 
-main .about .bio {
+header .about .bio {
   text-align: center;
   cursor: default;
 }
 
+main {
+  margin: 0 165px;
+}
+
+main .filter-menu {
+  width: 100%;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .filter-menu ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .filter-menu ul li {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #aaaaaa;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+main .filter-menu ul li:hover {
+  color: #222222;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+main .filter-menu ul .active {
+  color: #222222;
+}
+
 main .wall {
-  max-width: 100%;
-  margin: 0 140px 105px 142px;
+  max-width: calc(100% + 50px);
+  margin: 0 -50px 105px -23px;
 }
 
 main .wall .wall-item {
@@ -154,6 +212,10 @@ main .wall .wall-item:hover {
 main .wall .wall-item img {
   display: block;
   width: 100%;
+}
+
+main .wall .hidden {
+  display: none;
 }
 
 main .wall .wall-column {
@@ -181,7 +243,7 @@ footer {
 
 footer .copyright {
   font-size: 12px;
-  color: #B4B4B4;
+  color: #aaaaaa;
   cursor: default;
 }
 /*# sourceMappingURL=style.css.map */

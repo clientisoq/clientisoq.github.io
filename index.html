@@ -2,38 +2,24 @@
 layout: default
 ---
 
-<header>
-    <nav>
-        <div class="brand">OQ</div>
-        <ul class="links">
-            <li><a href="#">Our Studio</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
 <main>
-    <section class="about">
-        <h1 class="title">OQ Studio</h1>
-        <div class="social">
-            <i class="fab fa-500px"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-flickr"></i>
-        </div>
-        <p class="bio">We’re a boutique studio that specializes in commercial, product and portrait <br> photography, working between Cairo and Alexandria, Egypt.</p>
-    </section>
+    <div class="filter-menu">
+        <ul>
+            <li data-filter=".portrait" class="active">Portrait</li>
+            <li data-filter=".corporate">Corporate</li>
+            <li data-filter=".fashion">Fashion</li>
+            <li data-filter=".product">Product</li>
+            <li data-filter=".cityscape">Cityscape</li>
+        </ul>
+    </div>
 
     <section id="gallery" class="wall">
         {% for image in site.static_files %}
-            {% if image.path contains 'img' %}
-                {% increment imgCounter %}
-                <a href="#{{ imgCounter }}" class="wall-item"><img src="{{ site.baseurl }}{{ image.path }}" alt=""></a>
+            {% if image.path contains 'portrait' %}
+                <div class="wall-item portrait"><img src="{{ site.baseurl }}{{ image.path }}" alt=""></div>
+            {% elsif image.path contains 'corporate' %}
+                <div class="wall-item corporate hidden"><img src="{{ site.baseurl }}{{ image.path }}" alt=""></div>
             {% endif %}
         {% endfor %}
     </section>
 </main>
-
-<footer>
-    <div class="copyright">OQ 2019. Please do not reproduce without the expressed written consent of OQ.</div>
-</footer>
