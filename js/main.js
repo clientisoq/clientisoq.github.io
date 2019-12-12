@@ -12,7 +12,7 @@ window.addEventListener('load', SetGallerySize);
 window.addEventListener('resize', SetGallerySize);
 
 
-$( window ).on( "load", function() {
+$(document).ready(function() { 
     // Grid
     $('.wall').jaliswall({
         item: '.wall-item',
