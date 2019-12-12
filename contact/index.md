@@ -54,10 +54,10 @@ iframe {
 
 <div class="contact-form">
 
-<form action="" method="POST">
+<form name="contact" method="POST" data-netlify="true">
 
 <input type="text" name="name" placeholder="Name *">
-<input type="email" name="_replyto" placeholder="E-mail *">
+<input type="email" name="email" placeholder="E-mail *">
 <textarea type="text" name="message" placeholder="Message"></textarea>
 <button type="submit">Send</button>
 
