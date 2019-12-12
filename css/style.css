@@ -37,12 +37,22 @@ img {
 i.fas, i.fab {
   color: #222222;
   cursor: pointer;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 i.fas:hover, i.fab:hover {
   color: #aaaaaa;
+}
+
+h1 {
+  font-family: Rift;
+  font-size: 102px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
 }
 
 header nav {
@@ -82,8 +92,8 @@ header nav .links li {
 
 header nav .links li a {
   color: #aaaaaa;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 header nav .links li a:hover {
@@ -94,7 +104,7 @@ header nav .links li .current {
   color: #222222;
 }
 
-header .about {
+header .header {
   width: 100%;
   padding: 25px 60px 125px 60px;
   display: -webkit-box;
@@ -109,17 +119,7 @@ header .about {
           align-items: center;
 }
 
-header .about .title {
-  font-family: Rift;
-  font-size: 102px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  cursor: default;
-}
-
-header .about .social {
+header .header .social {
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +133,7 @@ header .about .social {
   margin: 2px 0 36px 0;
 }
 
-header .about .bio {
+header .header .whatis {
   text-align: center;
   cursor: default;
 }
@@ -173,14 +173,14 @@ main .filter-menu ul li {
       -ms-user-select: none;
           user-select: none;
   color: #aaaaaa;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 main .filter-menu ul li:hover {
   color: #222222;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 main .filter-menu ul .active {
@@ -189,14 +189,19 @@ main .filter-menu ul .active {
 
 main .wall {
   max-width: calc(100% + 50px);
+  height: 9999px;
   margin: 0 -50px 105px -23px;
+  opacity: 1;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
 }
 
 main .wall .wall-item {
   display: block;
   margin: 0 0 50px 0;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
+  opacity: 1;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 main .wall .wall-item:hover {
@@ -204,8 +209,8 @@ main .wall .wall-item:hover {
           transform: scale(1.01);
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
   cursor: pointer;
 }
 
@@ -218,12 +223,65 @@ main .wall .hidden {
   display: none;
 }
 
+main .wall .vis-hidden {
+  opacity: 0;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+}
+
 main .wall .wall-column {
   display: block;
   position: relative;
   width: 33.3333%;
   float: left;
   padding: 25px;
+}
+
+main .hideme {
+  opacity: 0;
+  -webkit-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+}
+
+main .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+main .about .bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about .bio p {
+  margin-left: 100px;
+  cursor: default;
+}
+
+main .about .bio .avatar {
+  max-height: 20%;
+  max-width: 20%;
+  background: #000;
+  border-radius: 50%;
 }
 
 footer {
