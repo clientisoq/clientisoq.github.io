@@ -55,6 +55,10 @@ h1 {
   cursor: default;
 }
 
+small {
+  color: #0645ad;
+}
+
 header nav {
   width: 100%;
   height: 104px;
@@ -267,21 +271,115 @@ main .about .bio {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 58px;
+}
+
+main .about .bio img {
+  min-width: 20rem;
+  -webkit-box-flex: 20rem;
+      -ms-flex: 20rem 0 0px;
+          flex: 20rem 0 0;
+  height: auto;
 }
 
 main .about .bio p {
-  margin-left: 100px;
-  cursor: default;
+  -webkit-box-flex: 500px;
+      -ms-flex: 500px 1 1;
+          flex: 500px 1 1;
+  padding-left: 100px;
 }
 
-main .about .bio .avatar {
-  max-height: 20%;
-  max-width: 20%;
-  background: #000;
-  border-radius: 50%;
+main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+main .contact .contact-info {
+  margin-right: 50px;
+  width: 50%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50% 1 1;
+          flex: 50% 1 1;
+}
+
+main .contact .contact-info h2 {
+  font-family: Rift;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+main .contact .contact-info .email, main .contact .contact-info .tel {
+  color: #0645ad;
+  display: block;
+  margin-bottom: 12px;
+}
+
+main .contact .contact-info .tel {
+  font-size: 14px;
+}
+
+main .contact .contact-form {
+  width: 50%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50% 0 0px;
+          flex: 50% 0 0;
+}
+
+main .contact .contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .contact .contact-form form input, main .contact .contact-form form textarea, main .contact .contact-form form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: solid 1px #aaaaaa;
+  outline: none;
+  padding: 12px 16px;
+  margin-bottom: 25px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+main .contact .contact-form form input:focus, main .contact .contact-form form textarea:focus, main .contact .contact-form form button:focus {
+  outline: none;
+  border: solid 1px #222222;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+main .contact .contact-form form textarea {
+  resize: none;
+  -webkit-box-flex: 150px !important;
+      -ms-flex: 150px 1 1 !important;
+          flex: 150px 1 1 !important;
+}
+
+main .contact .contact-form form button {
+  border: none;
+  background: #222222;
+  color: white;
+  cursor: pointer;
+}
+
+main .contact .contact-form form button:hover {
+  background: #aaaaaa;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 footer {

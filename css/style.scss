@@ -17,6 +17,7 @@
 
 $black: #222222;
 $gray: #aaaaaa;
+$blue: #0645ad;
 
 
 // ---------------------------------- INITIALIZATION ---------------------------------- //
@@ -60,6 +61,10 @@ h1 {
     font-size: 102px;
     user-select: none;
     cursor: default;
+}
+
+small {
+    color: $blue;
 }
 
 
@@ -129,6 +134,7 @@ header {
 }
 
 
+
 main {
     margin: 0 165px;
 
@@ -161,6 +167,8 @@ main {
             }
         }
     }
+
+
 
     .wall {
         max-width: calc(100% + 50px);
@@ -212,33 +220,109 @@ main {
         transition: opacity 1000ms ease-in-out;
     }
 
+
+
     .about {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 100px;
+        
 
         .bio {
             display: flex;
-            // flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            margin-top: 58px;
 
-            p {
-                margin-left: 100px;
-                cursor: default;
+            img {
+                min-width: 20rem;
+                // min-height: 20rem;
+                flex: 20rem 0 0;
+                height: auto;
             }
 
-            .avatar {
-                max-height: 20%;
-                max-width: 20%;
-                background: #000;
-                border-radius: 50%;
+            p {
+                flex: 500px 1 1;
+                padding-left: 100px;
+            }
+        }
+    }
+
+
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .contact-info {
+            margin-right: 50px;
+            width: 50%;
+            flex: 50% 1 1;
+
+            h2 {
+                font-family: Rift;
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+
+            .email, .tel {
+                color: $blue;
+                display: block;
+                margin-bottom: 12px;
+            }
+
+            .tel {
+                font-size: 14px;
+            }
+        }
+
+        .contact-form {
+            width: 50%;
+            flex: 50% 0 0;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input, textarea, button {
+                    appearance: none;
+                    border: solid 1px $gray;
+                    outline: none;
+                    padding: 12px 16px;
+                    margin-bottom: 25px;
+                    transition: all 200ms ease-in-out;
+
+                    &:focus {
+                        outline: none;
+                        border: solid 1px $black;
+                        transition: all 200ms ease-in-out;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                    flex: 150px 1 1 !important;
+                }
+
+                button {
+                    border: none;
+                    background: $black;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $gray;
+                        transition: all 200ms ease-in-out;
+                    }
+                }
             }
         }
     }
 }
+
 
 
 footer {
@@ -256,3 +340,5 @@ footer {
         cursor: default;
     }
 }
+
+
