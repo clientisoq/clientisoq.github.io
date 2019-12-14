@@ -1,25 +1,12 @@
----
-layout: default
----
-
-<main>
-    <div id="work" class="filter-menu">
-        <ul>
-            <li data-filter=".portrait" class="active">Portrait</li>
-            <li data-filter=".corporate">Corporate</li>
-            <li data-filter=".fashion">Fashion</li>
-            <li data-filter=".product">Product</li>
-            <li data-filter=".cityscape">Cityscape</li>
-        </ul>
-    </div>
-
-    <section class="wall">
-        {% for image in site.static_files %}
-            {% if image.path contains 'portrait' %}
-                <div class="wall-item portrait"><img src="{{ site.baseurl }}{{ image.path }}" alt="Picture"></div>
-            {% elsif image.path contains 'corporate' %}
-                <div class="wall-item corporate hidden vis-hidden"><img src="{{ site.baseurl }}{{ image.path }}" alt="Picture"></div>
-            {% endif %}
-        {% endfor %}
-    </section>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
